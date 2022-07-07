@@ -1,0 +1,175 @@
+{
+  "genesis_time": "2021-09-01T08:18:32.395064216Z",
+  "chain_id": "bnb-chain-mEDH3N",
+  "initial_height": "1",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "-1"
+    },
+    "evidence": {
+      "max_age_num_blocks": "100000",
+      "max_age_duration": "172800000000000",
+      "max_bytes": "1048576"
+    },
+    "validator": {
+      "pub_key_types": [
+         "ed25519"
+      ]
+    },
+    "version": {
+      "app_version": "0"
+    }
+  },
+  "validators": [
+    {
+      "address": "5D42CBE398F3FBE8DB0F6DBFA458B39E66077AF8",
+      "pub_key": {
+         "type": "tendermint/PubKeyEd25519",
+         "value": "2Bs0kE1zyZF3KOYQ9a+JMy8zBj2bnwrrxUG4uqhxud8="
+      },
+      "power": "40",
+      "name": "d87"
+    }
+  ],
+  "app_hash": "",
+  "app_state": {
+    "pull_fee": "ab1c00c8ecfcb3c704a363277e112fbb8ee049bb",
+    "val_ouner": "b6e37b549221fd09a9a87994cd712a881c092be1",
+    "mint_ouner": "46BED0BE1ECB1DAB188C48E133709D88F53530F2",
+    "accounts": [
+      {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "EqBjKVwNXz8XmUZjiKkW9ytsvghmnKPP52z5iqHlkvA="
+    },
+    "sequence": "0",
+    "coins": [
+      {
+        "Name": "feecoin",
+        "Amount": "100",
+        "DecimalPoint": 0,
+        "Movable": true,
+        "Hash": null,
+        "Delta": "0",
+        "CreatorAddr": "46BED0BE1ECB1DAB188C48E133709D88F53530F2",
+        "Expired": "0001-01-01T00:00:00Z",
+        "Chart": null
+      },
+      {
+        "Name": "mycoin",
+        "Amount": "10",
+        "DecimalPoint": 0,
+        "Movable": true,
+        "Hash": null,
+        "Delta": "0",
+        "CreatorAddr": "46BED0BE1ECB1DAB188C48E133709D88F53530F2",
+        "Expired": "0001-01-01T00:00:00Z",
+        "Chart": null
+      },
+      {
+        "Name": "testcoin",
+        "Amount": "20",
+        "DecimalPoint": 0,
+        "Movable": true,
+        "Hash": null,
+        "Delta": "0",
+        "CreatorAddr": "46BED0BE1ECB1DAB188C48E133709D88F53530F2",
+        "Expired": "0001-01-01T00:00:00Z",
+        "Chart": null
+      },
+      {
+        "Name": "EasyBizziPoint",
+        "Amount": "10",
+        "DecimalPoint": 0,
+        "Movable": false,
+        "Hash": null,
+        "Delta": "0",
+        "CreatorAddr": "46BED0BE1ECB1DAB188C48E133709D88F53530F2",
+        "Expired": "0001-01-01T00:00:00Z",
+        "Chart": null
+      },
+      {
+        "Name": "TarifBitBone",
+        "Amount": "10",
+        "DecimalPoint": 0,
+        "Movable": false,
+        "Hash": null,
+        "Delta": "0",
+        "CreatorAddr": "46BED0BE1ECB1DAB188C48E133709D88F53530F2",
+        "Expired": "0001-01-01T00:00:00Z",
+        "Chart": null
+      },
+      {
+        "Name": "Rank",
+        "Amount": "10",
+        "DecimalPoint": 0,
+        "Movable": false,
+        "Hash": null,
+        "Delta": "0",
+        "CreatorAddr": "46BED0BE1ECB1DAB188C48E133709D88F53530F2",
+        "Expired": "0001-01-01T00:00:00Z",
+        "Chart": null
+      },
+      {
+        "Name": "Power",
+        "Amount": "10",
+        "DecimalPoint": 0,
+        "Movable": false,
+        "Hash": null,
+        "Delta": "0",
+        "CreatorAddr": "46BED0BE1ECB1DAB188C48E133709D88F53530F2",
+        "Expired": "0001-01-01T00:00:00Z",
+        "Chart": null
+      },
+      {
+        "Name": "Deposit",
+        "Amount": "10",
+        "DecimalPoint": 0,
+        "Movable": false,
+        "Hash": null,
+        "Delta": "0",
+        "CreatorAddr": "46BED0BE1ECB1DAB188C48E133709D88F53530F2",
+        "Expired": "0001-01-01T00:00:00Z",
+        "Chart": null
+      },
+      {
+        "Name": "ContractNode",
+        "Amount": "10",
+        "DecimalPoint": 0,
+        "Movable": false,
+        "Hash": null,
+        "Delta": "0",
+        "CreatorAddr": "46BED0BE1ECB1DAB188C48E133709D88F53530F2",
+        "Expired": "0001-01-01T00:00:00Z",
+        "Chart": null
+      },
+      {
+        "Name": "Packet",
+        "Amount": "10",
+        "DecimalPoint": 0,
+        "Movable": false,
+        "Hash": null,
+        "Delta": "0",
+        "CreatorAddr": "46BED0BE1ECB1DAB188C48E133709D88F53530F2",
+        "Expired": "0001-01-01T00:00:00Z",
+        "Chart": null
+      },
+      {
+        "Name": "CareerPoint",
+        "Amount": "10",
+        "DecimalPoint": 0,
+        "Movable": false,
+        "Hash": null,
+        "Delta": "0",
+        "CreatorAddr": "46BED0BE1ECB1DAB188C48E133709D88F53530F2",
+        "Expired": "0001-01-01T00:00:00Z",
+        "Chart": null
+      }
+    ],
+    "up": "",
+    "dw": null
+      }
+    ]
+  }
+}
