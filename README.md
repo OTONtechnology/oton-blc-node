@@ -1,4 +1,4 @@
-# oton-blc-node
+# Oton-blc-node
 
 
 ABCI apps for tendermint chain https://github.com/tendermint/tendermint
@@ -9,8 +9,8 @@ Install the tendermint project, place the application in the tendermint director
 # Run apps
 
 one\. Create directory with configuration files
-Enter in console
-`./build/tendermint init validator`
+
+Enter in console `./build/tendermint init validator`
 
 Console output:
 ```
@@ -26,12 +26,14 @@ Console output:
 
 
 Correct the line in the configuration file, by default there is a validator
+
 `mode = "full" # change for replicators`
 
 
 
 Add a line to connect to a node (one of) our network, you can choose any node <http://82.196.1.93:26687/net_info>?
-`persistent-peers = "90acf4614a68fc1424a12fc8f726dd31fb7f9f95@82.196.1.93:26686"`
+
+`bootstrap-peers = "90acf4614a68fc1424a12fc8f726dd31fb7f9f95@82.196.1.93:26686"`
 
 
 
@@ -46,6 +48,7 @@ Change the block release interval in the validator mode, otherwise the node will
 
 
 3\. Run a node on your computer
+
 `./tendermint_87 start --proxy-app=otoncoin --consensus.create-empty-blocks=false --home /home/user/.tendermint \>\> work.log`
 
 
