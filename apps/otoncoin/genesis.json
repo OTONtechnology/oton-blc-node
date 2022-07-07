@@ -1,0 +1,163 @@
+{
+  "genesis_time": "2021-09-01T08:18:32.395064216Z",
+  "chain_id": "test-chain-VXi9bB",
+  "initial_height": "0",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "-1"
+    },
+    "evidence": {
+      "max_age_num_blocks": "100000",
+      "max_age_duration": "172800000000000",
+      "max_bytes": "1048576"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    },
+    "version": {
+      "app_version": "0"
+    }
+  },
+  "validators": [
+    {
+      "address": "38F753C5754D9918A9EA9664D6259B3933A02FFC",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "sxRlMO+pPFDOrXO1WrE4FsrrajWLjTi1/LLJBVVVuAk="
+      },
+      "power": "10",
+      "name": ""
+    }
+  ],
+  "app_hash": "",
+
+  "app_state": {
+   "pull_fee": "900140CC905073E01DA1A1B47FD629DD8F24093F",
+   "val_ouner":"9BA140CC905073E01DA1A1B47FD629DD8F24093F",
+   "mint_ouner":"9BA140CC905073E01DA1A1B47FD629DD8F24093F",
+   "accounts":[
+      {"pub_key":{
+	"type":"tendermint/PubKeyEd25519",
+	"value":"AxZUG+jnCBbN/37j06GwpZfPZsBSqh92ZBjh2RB0MY4="},
+	"sequence":"0",
+    "coins":[{
+		"Name":"feecoin",
+		"Amount":"100",
+		"DecimalPoint":0,
+		"Movable":true,
+		"Hash":null,
+		"Delta":"0",
+		"CreatorAddr":"9BA140CC905073E01DA1A1B47FD629DD8F24093F",
+		"Expired":"0001-01-01T00:00:00Z",
+		"Chart":null
+		},{
+		"Name":"mycoin",
+		"Amount":"10000000000000000000",
+		"DecimalPoint":0,
+		"Movable":true,
+		"Hash":null,
+		"Delta":"0",
+		"CreatorAddr":"9BA140CC905073E01DA1A1B47FD629DD8F24093F",
+		"Expired":"0001-01-01T00:00:00Z",
+		"Chart":null
+		},{
+		"Name":"testcoin",
+		"Amount":"20000000000000000000",
+		"DecimalPoint":0,
+		"Movable":true,
+		"Hash":null,
+		"Delta":"0",
+		"CreatorAddr":"9BA140CC905073E01DA1A1B47FD629DD8F24093F",
+		"Expired":"0001-01-01T00:00:00Z",
+		"Chart":null
+		},{
+		"Name":"EasyBizziPoint",
+		"Amount":"10",
+		"DecimalPoint":0,
+		"Movable":false,
+		"Hash":null,
+		"Delta":"0",
+		"CreatorAddr":"9BA140CC905073E01DA1A1B47FD629DD8F24093F",
+		"Expired":"0001-01-01T00:00:00Z",
+		"Chart":null
+		},{			
+		"Name":"TarifBitBone",
+		"Amount":"10",
+		"DecimalPoint":0,
+		"Movable":false,
+		"Hash":null,
+		"Delta":"0",
+		"CreatorAddr":"9BA140CC905073E01DA1A1B47FD629DD8F24093F",
+		"Expired":"0001-01-01T00:00:00Z",
+		"Chart":null
+		},{			
+		"Name":"Rank",
+		"Amount":"10",
+		"DecimalPoint":0,
+		"Movable":false,
+		"Hash":null,
+		"Delta":"0",
+		"CreatorAddr":"9BA140CC905073E01DA1A1B47FD629DD8F24093F",
+		"Expired":"0001-01-01T00:00:00Z",
+		"Chart":null
+		
+		},{			
+		"Name":"Power",
+		"Amount":"10",
+		"DecimalPoint":0,
+		"Movable":false,
+		"Hash":null,
+		"Delta":"0",
+		"CreatorAddr":"9BA140CC905073E01DA1A1B47FD629DD8F24093F",
+		"Expired":"0001-01-01T00:00:00Z",
+		"Chart":null
+		},{			
+		"Name":"Deposit",
+		"Amount":"10",
+		"DecimalPoint":0,
+		"Movable":false,
+		"Hash":null,
+		"Delta":"0",
+		"CreatorAddr":"9BA140CC905073E01DA1A1B47FD629DD8F24093F",
+		"Expired":"0001-01-01T00:00:00Z",
+		"Chart":null
+		
+		},{
+		"Name":"ContractNode",
+		"Amount":"10",
+		"DecimalPoint":0,
+		"Movable":false,
+		"Hash":null,
+		"Delta":"0",
+		"CreatorAddr":"9BA140CC905073E01DA1A1B47FD629DD8F24093F",
+		"Expired":"0001-01-01T00:00:00Z",
+		"Chart":null
+		},{
+		"Name":"Packet",
+		"Amount":"10",
+		"DecimalPoint":0,
+		"Movable":false,
+		"Hash":null,
+		"Delta":"0",
+		"CreatorAddr":"9BA140CC905073E01DA1A1B47FD629DD8F24093F",
+		"Expired":"0001-01-01T00:00:00Z",
+		"Chart":null
+		},{
+		"Name":"CareerPoint",
+		"Amount":"10",
+		"DecimalPoint":0,
+		"Movable":false,
+		"Hash":null,
+		"Delta":"0",
+		"CreatorAddr":"9BA140CC905073E01DA1A1B47FD629DD8F24093F",
+		"Expired":"0001-01-01T00:00:00Z",
+		"Chart":null
+	}],
+    "up":"",
+	"dw":null}
+   ]
+  }
+}

@@ -1,0 +1,294 @@
+syntax = "proto3";
+
+package tx;
+
+import "gogo.proto";
+
+message Coin {
+  string name = 1;
+  int64 amount = 2;
+}
+
+message Input {
+  bytes address = 1;
+  repeated Coin coins = 2 [(gogoproto.nullable) = false];
+  int64 sequence = 3;
+  bytes signature = 4;
+  bytes pub_key = 5;
+}
+
+
+
+
+
+message Output {
+  bytes address = 1;
+  repeated Coin coins = 2 [(gogoproto.nullable) = false];
+}
+
+
+
+
+message Raw {
+  string type = 1;
+  bytes raw = 2;
+}
+
+
+message SendCoins {
+  int64 gas = 1;
+  Coin fee = 2 [(gogoproto.nullable) = false];
+  repeated Input inputs = 3 [(gogoproto.nullable) = false];
+  repeated Output outputs = 4 [(gogoproto.nullable) = false];
+}
+
+
+message MintCoins {
+  Coin fee = 1 [(gogoproto.nullable) = false];
+  repeated Input inputs = 2 [(gogoproto.nullable) = false];
+  repeated Output outputs = 3 [(gogoproto.nullable) = false];
+
+  string name = 4;
+  int64 amount = 5;
+  uint32 decimal_point = 6;
+
+  bool movable = 7;
+  int64 delta = 8;
+}
+
+
+
+
+message SetSalePrice {
+  Coin fee = 1 [(gogoproto.nullable) = false];
+
+
+
+  repeated Input inputs = 2 [(gogoproto.nullable) = false];
+
+
+  string name = 3;
+
+
+
+  Coin price = 4 [(gogoproto.nullable) = false];
+}
+
+
+
+
+
+message CreateAMC {
+  Coin fee = 1 [(gogoproto.nullable) = false];
+
+
+
+
+  repeated Input inputs = 2 [(gogoproto.nullable) = false];
+
+
+
+  bytes address = 3;
+
+
+  string name = 4;
+
+
+  repeated AMCParam params = 5 [(gogoproto.nullable) = false];
+
+
+
+}
+
+
+message AMCParam {
+  string key = 1;
+  int64 value = 2;
+}
+
+
+
+
+message SetInAMC {
+  Coin fee = 1 [(gogoproto.nullable) = false];
+
+
+  repeated Input inputs = 2 [(gogoproto.nullable) = false];
+
+
+
+  bytes address = 3;
+
+
+  bytes referal = 4;
+
+
+
+  bytes sponsor = 5;
+}
+
+
+
+
+message BuyInAMC {
+  Coin fee = 1 [(gogoproto.nullable) = false];
+
+
+
+  repeated Input inputs = 2 [(gogoproto.nullable) = false];
+
+
+  bytes address = 3;
+
+
+  bytes referal = 4;
+
+
+  Coin value = 5 [(gogoproto.nullable) = false];
+  Coin delta = 6 [(gogoproto.nullable) = false];
+}
+
+
+
+message RefundInAMC {
+  Coin fee = 1 [(gogoproto.nullable) = false];
+
+
+  repeated Input inputs = 2 [(gogoproto.nullable) = false];
+
+
+  string name = 3;
+
+
+  bytes buy = 4;
+
+
+  string log = 5;
+}
+
+
+
+
+
+
+message ChangeAddressWant {
+  Coin fee = 1 [(gogoproto.nullable) = false];
+
+
+  repeated Input inputs = 2 [(gogoproto.nullable) = false];
+
+
+
+
+  repeated Output outputs = 3 [(gogoproto.nullable) = false];
+}
+
+
+
+
+
+
+message ChangeAddressApply {
+  Coin fee = 1 [(gogoproto.nullable) = false];
+
+
+
+  repeated Input inputs = 2 [(gogoproto.nullable) = false];
+
+
+  repeated Vote votes = 3 [(gogoproto.nullable) = false];
+
+
+
+
+
+
+
+  bytes address = 4;
+
+
+
+}
+
+
+
+message Vote {
+  bytes address = 1;
+  bytes signature = 2;
+  bytes pub_key = 3;
+}
+
+
+
+message BuyNode {
+  Coin fee = 1 [(gogoproto.nullable) = false];
+
+
+
+  repeated Input inputs = 2 [(gogoproto.nullable) = false];
+
+
+
+  repeated Output outputs = 3 [(gogoproto.nullable) = false];
+
+
+  bytes holder = 4;
+
+
+  bytes validator = 5;
+
+
+  int64 power = 6;
+
+
+
+
+  Coin value = 7 [(gogoproto.nullable) = false];
+  Coin delta = 8 [(gogoproto.nullable) = false];
+}
+
+
+
+
+message SetInteresNode {
+  Coin fee = 1 [(gogoproto.nullable) = false];
+
+
+  repeated Input inputs = 2 [(gogoproto.nullable) = false];
+
+
+  Coin value = 3 [(gogoproto.nullable) = false];
+}
+
+
+message SetNodeReward {
+  Coin fee = 1 [(gogoproto.nullable) = false];
+
+
+  repeated Input inputs = 2 [(gogoproto.nullable) = false];
+
+
+  Coin value = 3 [(gogoproto.nullable) = false];
+}
+
+
+
+message SetNewAge {
+  Coin fee = 1 [(gogoproto.nullable) = false];
+
+
+  repeated Input inputs = 2 [(gogoproto.nullable) = false];
+
+
+  repeated AgeParam params = 3 [(gogoproto.nullable) = false];
+}
+
+
+
+
+
+message AgeParam {
+  string key = 1;
+  int64 value = 2;
+  string svalue = 3;
+}
